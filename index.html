@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,700|Source+Serif+Pro&display=swap");
+      body {
+        margin: 0;
+        padding: 50px;
+        font-family: "Libre Franklin", sans-serif;
+        font-size: 16px;
+        line-height: 150%;
+        color: var(--color2);
+      }
+
+      .elegant {
+        font-family: "Source Serif Pro", serif;
+      }
+
+      a {
+        color: var(--color1);
+        font-weight: bold;
+        text-decoration: none;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      img {
+        /*
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+        */
+        width: 100%;
+        display: block;
+      }
+      h1 {
+        margin: 0;
+      }
+      header {
+        height: 50px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .links {
+        display: flex;
+      }
+      .links > * {
+        margin-left: 10px;
+      }
+      .links > *:first-child {
+        margin: 0;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+      .logo > * {
+        margin-right: 10px;
+      }
+
+      :root {
+        --color1: royalblue;
+        --color2: #333;
+      }
+    </style>
+  </head>
+  <body>
+    <style>
+      .trenn {
+        border: 2px solid red;
+        padding: 5px;
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        display: none;
+      }
+      .trenn > * {
+        border: 2px solid blue;
+        padding: 5px;
+      }
+      .col1 {
+        flex: 1;
+      }
+    </style>
+
+    <div class="trenn">
+      <div class="col1">1</div>
+      <div class="col2">
+        The object-fit property defines how an element responds to the height
+        and width of its content box. The object-fit property defines how an
+        element responds to the height and width of its content box.
+      </div>
+    </div>
+
+    <header>
+      <div class="logo">
+        <svg width="50" height="50">
+          <circle cx="25" cy="25" r="18" fill="var(--color1)" />
+        </svg>
+        <h1>Anneli</h1>
+      </div>
+
+      <div class="links">
+        <a href="minust.html">Minust</a>
+        <a href="kontakt.html">Kontakt</a>
+      </div>
+    </header>
+
+    <p class="elegant">
+      Minu katsetused kodulehe loomisest hakkavad vilja kandma...
+    </p>
+
+    <div class="cards">
+      <div class="card">
+        <img class="image" src="images/mannekeen.jpg" />
+        <p class="text">
+          Saaremaa kapmsunid
+        </p>
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/undva märk.jpg" />
+        <p class="text">
+          Märgid
+        </p>
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/killud.jpg" />
+        <p class="text">
+          Generatiivne kunst
+        </p>
+      </div>
+
+      <div class="card">
+        <img class="image" src="images/fantaasia.jpg" />
+        <p class="text">
+          Photoshop
+        </p>
+      </div>
+
+    </div>
+
+    <style>
+      .card {
+        box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        filter: brightness(30%);
+        transition: all 1s;
+      }
+      .card:hover {
+        filter: brightness(100%);
+      }
+      .card .image {
+        object-fit: cover;
+      }
+      .card .text {
+        flex: 1;
+        margin: 0;
+        padding: 15px;
+        background: var(--color2);
+        color: white;
+      }
+
+      .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 15px;
+      }
+      footer {
+          
+          height:  100px;
+          margin-top: 50px;
+      }
+      footer a{
+          color: var(--color2);
+      }
+    </style>
+
+
+<
+<footer>
+    <div>
+         Email:
+        <a href="mailto:anneli.teppo@gmail.com">
+             anneli.teppo@gmail.com
+        </a> 
+        Phone: <a href="tel:+372 564 2362">
+            tel +372 564 2362
+    </div>
+
+</footer>
+  </body>
+</html>
